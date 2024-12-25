@@ -23,3 +23,13 @@ searchInput.addEventListener('input', (event) => {
         card.style.display = title.includes(query) ? 'block' : 'none';
     });
 });
+
+// Load user data from Telegram WebApp
+const userData = window.Telegram.WebApp.initDataUnsafe;
+if (userData.user) {
+    document.getElementById('profile-pic').src = userData.user.photo_url || 'https://via.placeholder.com/100';
+    document.getElementById('username').innerText = `@${userData.user.username || 'Anonymous'}`;
+    document.getElementById('bio').innerText = userData.user.bio || 'No bio provided';
+}
+
+window.Telegram.WebApp.ready();
