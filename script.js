@@ -25,11 +25,15 @@ searchInput.addEventListener('input', (event) => {
 });
 
 // Load user data from Telegram WebApp
-const userData = window.Telegram.WebApp.initDataUnsafe;
-if (userData.user) {
-    document.getElementById('profile-pic').src = userData.user.photo_url || 'https://via.placeholder.com/100';
-    document.getElementById('username').innerText = `@${userData.user.username || 'Anonymous'}`;
-    document.getElementById('bio').innerText = userData.user.bio || 'No bio provided';
-}
+window.Telegram.WebApp.ready(); // Initialize the web app
 
-window.Telegram.WebApp.ready();
+const userData = window.Telegram.WebApp.initDataUnsafe;
+
+// Extract user information
+const userId = userData.user.id;
+const userName = userData.user.username || 'Anonymous';
+const userPhoto = userData.user.photo_url || 'default-photo.png';
+const userBio = userData.user.bio || 'No bio provided';
+
+console.log(userId, userName, userPhoto, userBio);
+
