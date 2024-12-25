@@ -37,3 +37,7 @@ const userBio = userData.user.bio || 'No bio provided';
 
 console.log(userId, userName, userPhoto, userBio);
 
+ // Inject user data into the profile page
+  document.getElementById('profile-pic').src = userData.user.photo_url || 'default-photo.png';
+  document.getElementById('username').innerText = `@${userData.user.username || 'Anonymous'}`;
+  document.getElementById('bio').innerText = userData.user.bio || 'No bio provided';
