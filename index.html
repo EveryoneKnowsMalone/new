@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dinero</title>
+</head>
+<body>
+    <header>
+        <h1>Dinero</h1>
+        <button id="toggle-theme">🎨</button>
+    </header>
+
+    <main id="home">
+        <div class="slide-section">
+            <h2>🔥 Trending Airdrops</h2>
+            <div class="slider">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Airdrop 1">
+                    <h3>Airdrop 1</h3>
+                    <p>Earn 100 tokens now!</p>
+                    <button>Launch</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Airdrop 2">
+                    <h3>Airdrop 2</h3>
+                    <p>Exclusive rewards await!</p>
+                    <button>Launch</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-section">
+            <h2>🌟 New Airdrops</h2>
+            <div class="slider">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Airdrop A">
+                    <h3>Airdrop A</h3>
+                    <p>Join early and earn!</p>
+                    <button>Launch</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Airdrop B">
+                    <h3>Airdrop B</h3>
+                    <p>Don't miss out!</p>
+                    <button>Launch</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="categories" class="categories">
+        <div class="slide-section">
+            <h2>📂 Popular Categories</h2>
+            <div class="slider">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Category 1">
+                    <h3>Crypto Tokens</h3>
+                    <p>Discover token-based airdrops.</p>
+                    <button>Explore</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Category 2">
+                    <h3>NFTs</h3>
+                    <p>Explore NFT airdrops now.</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-section">
+            <h2>🎯 Recommended Categories</h2>
+            <div class="slider">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Category A">
+                    <h3>Gaming</h3>
+                    <p>Earn rewards in gaming projects.</p>
+                    <button>Explore</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Category B">
+                    <h3>DeFi</h3>
+                    <p>Participate in DeFi airdrops.</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="explore" class="explore">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for airdrops...">
+        </div>
+        <div class="explore-cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Airdrop 1">
+                <h3>Airdrop 1</h3>
+                <p>Earn 100 tokens now!</p>
+                <button>Launch</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Airdrop 2">
+                <h3>Airdrop 2</h3>
+                <p>Exclusive rewards await!</p>
+                <button>Launch</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile" class="profile">
+        <img id="profile-pic" src="https://via.placeholder.com/100" alt="Profile Picture">
+        <h2 id="username">@Username</h2>
+        <p id="bio">Bio goes here</p>
+    </section>
+
+    <nav class="bottom-nav">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('categories')">Categories</button>
+        <button onclick="showPage('explore')">Explore</button>
+        <button onclick="showPage('profile')">Profile</button>
+    </nav>
+</body>
+<script src="script.js"></script>
+</html>
